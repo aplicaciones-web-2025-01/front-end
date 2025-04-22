@@ -1,15 +1,15 @@
 ﻿<script setup>
-import RightBarItem from '@/components/right-bar-item.component.vue'
+import RightBarItem from '@/Shared/Presentacion/right-bar-item.component.vue'
 
 </script>
 
 <template>
-  <li>
+  <ul>
     <RightBarItem text="my item 1" />
     <RightBarItem text="my item 2" />
     <RightBarItem text="my item 3" />
     <RightBarItem text="my item 4" />
-  </li>
+  </ul>
 </template>
 
 <style scoped>

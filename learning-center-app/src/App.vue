@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-  import HomeView from '@/components/home-view.page.vue';
+  import HomeView from '@/Shared/Presentacion/home-view.page.vue';
 
 </script>
 
