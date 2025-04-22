@@ -20,13 +20,16 @@
   padding: 1rem;
   border-right: 1px solid #ddd;
 }
+
 .sidebar ul {
   list-style-type: none;
   padding: 0;
 }
+
 .sidebar li {
   margin: 0.5rem 0;
 }
+
 .sidebar a {
   text-decoration: none;
   color: #2196f3;

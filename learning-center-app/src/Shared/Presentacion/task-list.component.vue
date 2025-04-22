@@ -1,6 +1,6 @@
 ﻿<template>
   <section class="task-list">
-    <task-item v-for="(task, index) in tasks" :key="index" :task="task" />
+    <task-item v-for="(task, index) in tasks" :key="index" :task="task"/>
   </section>
 </template>
 

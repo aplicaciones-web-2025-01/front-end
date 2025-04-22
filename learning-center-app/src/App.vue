@@ -1,9 +1,9 @@
 <template>
-  <HomeView />
+  <HomeView/>
 </template>
 
 <script setup>
-  import HomeView from '@/Shared/Presentacion/home-view.page.vue';
+import HomeView from '@/Shared/Presentacion/home-view.page.vue';
 
 </script>
 

@@ -1,32 +1,30 @@
 ﻿<template>
   <div class="home-view">
-    <AppHeader />
+    <AppHeader/>
     <div class="content-wrapper">
-      <Sidebar />
+      <Sidebar/>
       <main class="main-content">
         <form>
           <div>
-            <input v-model="name" type="text" id="name" />
+            <input v-model="name" type="text" id="name"/>
             <label for="name">{{ name }}</label>
           </div>
         </form>
-        <TaskList />
-        <RightBar v-if="showRightBar" />
+        <TaskList/>
+        <RightBar v-if="showRightBar"/>
       </main>
     </div>
-
-    <pv-button label="Submit" />
 
     <button @click="ToggleShowRightBar">
       {{ showRightBar ? 'Hide RightBar' : 'Show RightBar' }}
     </button>
 
-    <AppFooter />
+    <AppFooter/>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 import AppHeader from '@/Shared/Presentacion/the-header.component.vue';
 import AppFooter from '@/Shared/Presentacion/the-footer.component.vue';
 import Sidebar from '@/Shared/Presentacion/the-sidebar.component.vue';

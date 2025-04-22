@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 
 <template>
-<li>{{ text}}</li>
+  <li>{{ text }}</li>
 </template>
 
 <style scoped>
