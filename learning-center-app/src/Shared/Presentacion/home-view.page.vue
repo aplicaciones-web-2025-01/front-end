@@ -15,6 +15,7 @@
       </main>
     </div>
 
+    <pv-button label="submit" />
     <button @click="ToggleShowRightBar">
       {{ showRightBar ? 'Hide RightBar' : 'Show RightBar' }}
     </button>
@@ -31,7 +32,6 @@ import Sidebar from '@/Shared/Presentacion/the-sidebar.component.vue';
 import TaskList from '@/Shared/Presentacion/task-list.component.vue';
 import RightBar from '@/Shared/Presentacion/right-bar.component.vue';
 
-
 const showRightBar = ref(false);
 const name = ref("");
 
@@ -44,8 +44,10 @@ const ToggleShowRightBar = () => {
 .home-view {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
 }
+
 
 .content-wrapper {
   display: flex;
