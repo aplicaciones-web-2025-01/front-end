@@ -4,7 +4,6 @@
 
 <script setup>
 import HomeView from '@/Shared/Presentacion/home-view.page.vue';
-
 </script>
 
 <style scoped>

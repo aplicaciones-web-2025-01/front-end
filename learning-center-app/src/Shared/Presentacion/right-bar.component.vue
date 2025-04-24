@@ -1,6 +1,5 @@
 ﻿<script setup>
 import RightBarItem from '@/Shared/Presentacion/right-bar-item.component.vue'
-
 </script>
 
 <template>

@@ -1,10 +1,10 @@
 ﻿<template>
-  <aside class="sidebar" aria-label="Main Navigation">
+  <aside aria-label="Main Navigation" class="sidebar">
     <nav>
       <ul>
-        <li><a href="#books" aria-label="Books Section">Books</a></li>
-        <li><a href="#authors" aria-label="Authors Section">Authors</a></li>
-        <li><a href="#genres" aria-label="Genres Section">Genres</a></li>
+        <li><a aria-label="Books Section" href="#books">Books</a></li>
+        <li><a aria-label="Authors Section" href="#authors">Authors</a></li>
+        <li><a aria-label="Genres Section" href="#genres">Genres</a></li>
       </ul>
     </nav>
   </aside>
