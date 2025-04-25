@@ -2,7 +2,10 @@
   "message": {
     "hello": "Bonjour {user}",
     "welcome": "Bienvenue sur notre plateforme!",
-    "goodbye": "Au revoir, à bientôt!"
+    "goodbye": "Au revoir, à bientôt!",
+    "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "success": "Votre action a été effectuée avec succès!",
+    "loading": "Chargement..."
   },
   "articles": {
     "title": "Derniers Articles",
@@ -11,7 +14,11 @@
     "published_at": "Publié le",
     "category": "Catégorie",
     "tags": "Tags",
-    "comments": "Commentaires"
+    "comments": "Commentaires",
+    "no_articles": "Aucun article disponible.",
+    "related_articles": "Articles similaires",
+    "share": "Partager l'article",
+    "copy_to_clipboard": "Copier le lien dans le presse-papiers"
   },
   "home": {
     "title": "Bienvenue à la maison",
@@ -19,6 +26,23 @@
     "product_name": "Nom du produit :",
     "submit": "Envoyer",
     "show_right_bar": "Afficher la barre de droite",
-    "hide_right_bar": "Masquer la barre de droite"
+    "hide_right_bar": "Masquer la barre de droite",
+    "featured_products": "Produits en vedette",
+    "latest_news": "Dernières actualités",
+    "contact_us": "Contactez-nous"
+  },
+  "user": {
+    "profile": "Profil utilisateur",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter",
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "edit_profile": "Modifier le profil",
+    "notifications": "Notifications"
+  },
+  "errors": {
+    "404": "Page non trouvée",
+    "500": "Erreur interne du serveur",
+    "network": "Erreur de réseau. Veuillez vérifier votre connexion."
   }
 }

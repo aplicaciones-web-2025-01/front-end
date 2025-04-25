@@ -3,6 +3,8 @@ import PrimeVue from 'primevue/config';
 import App from './App.vue'
 import Lara from '@primeuix/themes/lara';
 import Button from "primevue/button"
+import Avatar from "primevue/avatar"
+import Card from "primevue/card";
 import 'primeflex/primeflex.css'
 import Paginator from 'primevue/paginator';
 import {SelectButton} from "primevue";
@@ -21,6 +23,7 @@ app.use(PrimeVue,
 app.component('pv-button', Button);
 app.component('pv-paginator', Paginator)
 app.component('pv-select-button', SelectButton)
-
+app.component('pv-avatar', Avatar)
+app.component('pv-card', Card)
 app.use(i18n)
 app.mount('#app')
