@@ -1,16 +1,39 @@
 ﻿<template>
-  <aside aria-label="Main Navigation" class="sidebar">
-    <nav>
+  <aside
+      :class="['sidebar', { 'collapsed': isCollapsed }]"
+      aria-label="Main Navigation"
+  >
+    <button class="toggle-button" @click="toggleSidebar">
+      {{ isCollapsed ? sidebarTexts.show : sidebarTexts.hide }}
+    </button>
+    <nav v-if="!isCollapsed">
       <ul>
-        <li><a aria-label="Books Section" href="#books">Books</a></li>
-        <li><a aria-label="Authors Section" href="#authors">Authors</a></li>
-        <li><a aria-label="Genres Section" href="#genres">Genres</a></li>
+        <li v-for="(item, index) in sidebarTexts.links" :key="index">
+          <a :aria-label="item.ariaLabel" :href="item.href">{{ item.text }}</a>
+        </li>
       </ul>
     </nav>
   </aside>
 </template>
 
 <script setup>
+import {ref} from "vue";
+
+const isCollapsed = ref(false);
+
+const sidebarTexts = ref({
+  show: "Show Sidebar",
+  hide: "Hide Sidebar",
+  links: [
+    {text: "Home", ariaLabel: "Home Section", href: "#home"},
+    {text: "News", ariaLabel: "News Section", href: "#news"},
+    {text: "Products", ariaLabel: "Products Section", href: "#products"}
+  ]
+});
+
+const toggleSidebar = () => {
+  isCollapsed.value = !isCollapsed.value;
+};
 </script>
 
 <style scoped>
@@ -19,6 +42,21 @@
   background-color: #ececec;
   padding: 1rem;
   border-right: 1px solid #ddd;
+  transition: width 0.3s ease-in-out;
+}
+
+.collapsed {
+  width: 50px;
+  overflow: hidden;
+}
+
+.toggle-button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 100%;
 }
 
 .sidebar ul {

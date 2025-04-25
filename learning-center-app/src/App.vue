@@ -1,9 +1,10 @@
 <template>
-  <HomeView/>
+  <DefaultLayout/>
 </template>
 
 <script setup>
-import HomeView from '@/Shared/Presentation/home-view.page.vue';
+
+import DefaultLayout from "@/Shared/Presentation/default-layout.page.vue";
 </script>
 
 <style scoped>
