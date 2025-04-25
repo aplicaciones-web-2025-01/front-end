@@ -1,10 +1,12 @@
 ﻿<template>
   <header class="header">
-    <h1>Library Center</h1>
+    <h1>{{ $t('message.hello',{ user: 'Naldo' })}}</h1>
+    <LanguageSwitcher />
   </header>
 </template>
 
 <script setup>
+import LanguageSwitcher from '@/Shared/Presentation/language-switcher.component.vue'
 </script>
 
 <style scoped>

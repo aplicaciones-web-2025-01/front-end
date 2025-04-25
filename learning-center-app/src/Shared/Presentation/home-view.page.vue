@@ -5,9 +5,11 @@
       <Sidebar/>
       <main class="main-content">
         <form>
-          <div class="hidden">
-            <input id="name" v-model="name" type="text" minlength="20" >
-            <label for="name">{{ name }}</label>
+          <div >
+            <label  for="Name" >Name of Product :</label>
+            <input id="Name"  v-model="name" type="text" minlength="20" >
+
+            <label >{{ name }}</label>
           </div>
         </form>
         <div class="flex flex-column lg:flex-row align-items-center lg:justify-content-end justify-content-start">
@@ -21,6 +23,7 @@
             3
           </div>
         </div>
+        <!-- <img src="../../assets/catanddog.jpg" alt="cat with dog" > -->
         <TaskList/>
         <RightBar v-if="showRightBar"/>
       </main>
@@ -36,11 +39,11 @@
 
 <script setup>
 import {ref} from 'vue';
-import AppHeader from '@/Shared/Presentacion/the-header.component.vue';
-import AppFooter from '@/Shared/Presentacion/the-footer.component.vue';
-import Sidebar from '@/Shared/Presentacion/the-sidebar.component.vue';
-import TaskList from '@/Shared/Presentacion/task-list.component.vue';
-import RightBar from '@/Shared/Presentacion/right-bar.component.vue';
+import AppHeader from '@/Shared/Presentation/the-header.component.vue';
+import AppFooter from '@/Shared/Presentation/the-footer.component.vue';
+import Sidebar from '@/Shared/Presentation/the-sidebar.component.vue';
+import TaskList from '@/Shared/Presentation/task-list.component.vue';
+import RightBar from '@/Shared/Presentation/right-bar.component.vue';
 
 
 const showRightBar = ref(false);
