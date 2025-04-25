@@ -1,24 +1,24 @@
 ﻿{
-    "message": {
-        "hello": "こんにちは {user}",
-        "welcome": "ようこそ！",
-        "goodbye": "さようなら、また会いましょう!"
-    },
-    "articles": {
-        "title": "最新の記事",
-        "read_more": "続きを読む",
-        "author": "著者",
-        "published_at": "投稿日",
-        "category": "カテゴリー",
-        "tags": "タグ",
-        "comments": "コメント"
-    },
-    "home": {
-        "title": "ホームへようこそ",
-        "welcome_message": "ここに来てくれて嬉しいです！どうぞ楽しんでください。",
-        "product_name": "製品名：",
-        "submit": "送信",
-        "show_right_bar": "右バーを表示",
-        "hide_right_bar": "右バーを隠す"
-    }
+  "message": {
+    "hello": "こんにちは {user}",
+    "welcome": "ようこそ！",
+    "goodbye": "さようなら、また会いましょう!"
+  },
+  "articles": {
+    "title": "最新の記事",
+    "read_more": "続きを読む",
+    "author": "著者",
+    "published_at": "投稿日",
+    "category": "カテゴリー",
+    "tags": "タグ",
+    "comments": "コメント"
+  },
+  "home": {
+    "title": "ホームへようこそ",
+    "welcome_message": "ここに来てくれて嬉しいです！どうぞ楽しんでください。",
+    "product_name": "製品名：",
+    "submit": "送信",
+    "show_right_bar": "右バーを表示",
+    "hide_right_bar": "右バーを隠す"
+  }
 }

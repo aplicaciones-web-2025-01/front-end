@@ -1,6 +1,5 @@
 ﻿<script setup>
 import ArticleItem from "./article-item.component.vue";
-
 </script>
 
 <template>

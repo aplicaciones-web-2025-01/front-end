@@ -4,7 +4,7 @@
     <div class="content-wrapper">
       <Sidebar v-if="showSidebar"/>
       <main class="main-content">
-        <ArticleView />
+        <ArticleView/>
       </main>
     </div>
     <AppFooter/>

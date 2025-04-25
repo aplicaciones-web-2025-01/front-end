@@ -1,24 +1,24 @@
 ﻿{
-    "message": {
-        "hello": "Bonjour {user}",
-        "welcome": "Bienvenue sur notre plateforme!",
-        "goodbye": "Au revoir, à bientôt!"
-    },
-    "articles": {
-        "title": "Derniers Articles",
-        "read_more": "Lire plus",
-        "author": "Auteur",
-        "published_at": "Publié le",
-        "category": "Catégorie",
-        "tags": "Tags",
-        "comments": "Commentaires"
-    },
-    "home": {
-        "title": "Bienvenue à la maison",
-        "welcome_message": "Nous sommes ravis de vous voir ici ! Profitez de votre visite.",
-        "product_name": "Nom du produit :",
-        "submit": "Envoyer",
-        "show_right_bar": "Afficher la barre de droite",
-        "hide_right_bar": "Masquer la barre de droite"
-    }
+  "message": {
+    "hello": "Bonjour {user}",
+    "welcome": "Bienvenue sur notre plateforme!",
+    "goodbye": "Au revoir, à bientôt!"
+  },
+  "articles": {
+    "title": "Derniers Articles",
+    "read_more": "Lire plus",
+    "author": "Auteur",
+    "published_at": "Publié le",
+    "category": "Catégorie",
+    "tags": "Tags",
+    "comments": "Commentaires"
+  },
+  "home": {
+    "title": "Bienvenue à la maison",
+    "welcome_message": "Nous sommes ravis de vous voir ici ! Profitez de votre visite.",
+    "product_name": "Nom du produit :",
+    "submit": "Envoyer",
+    "show_right_bar": "Afficher la barre de droite",
+    "hide_right_bar": "Masquer la barre de droite"
+  }
 }

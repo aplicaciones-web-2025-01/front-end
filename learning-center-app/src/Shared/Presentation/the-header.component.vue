@@ -1,7 +1,7 @@
 ﻿<template>
   <header class="header">
-    <h1>{{ $t('message.hello',{ user: 'Naldo' })}}</h1>
-    <LanguageSwitcher />
+    <h1>{{ $t('message.hello', {user: 'Naldo'}) }}</h1>
+    <LanguageSwitcher/>
   </header>
 </template>
 
