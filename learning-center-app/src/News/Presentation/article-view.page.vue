@@ -1,13 +1,6 @@
 ﻿<script setup>
-import {defineProps} from "vue";
 import ArticleItem from "./article-item.component.vue";
 
-defineProps({
-  articles: {
-    type: Array,
-    required: true
-  }
-});
 </script>
 
 <template>
