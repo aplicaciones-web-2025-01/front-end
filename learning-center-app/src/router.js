@@ -1,0 +1,18 @@
+﻿import HomeView from "@/Shared/Presentation/home-view.page.vue";
+import ArticleView from "@/News/Presentation/article-view.page.vue";
+import NotFound from "@/Shared/Presentation/not-found.component.vue";
+import {createWebHistory, createRouter} from "vue-router";
+
+const routes = [
+    { path: '/', component: HomeView },
+    { path: '/article', component: ArticleView },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+})
+
+
+export default router;

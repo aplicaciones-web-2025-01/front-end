@@ -6,5 +6,4 @@
         this.urlToImage = urlToImage;
         this.publishedAt = new Date(publishedAt);
     }
-
 }

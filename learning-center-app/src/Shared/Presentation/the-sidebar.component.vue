@@ -9,7 +9,7 @@
     <nav v-if="!isCollapsed">
       <ul>
         <li v-for="(item, index) in sidebarTexts.links" :key="index">
-          <a :aria-label="item.ariaLabel" :href="item.href">{{ item.text }}</a>
+          <RouterLink :to="item.href">{{ item.text }}</RouterLink>
         </li>
       </ul>
     </nav>
@@ -25,9 +25,9 @@ const sidebarTexts = ref({
   show: "Show Sidebar",
   hide: "Hide Sidebar",
   links: [
-    {text: "Home", ariaLabel: "Home Section", href: "#home"},
-    {text: "News", ariaLabel: "News Section", href: "#news"},
-    {text: "Products", ariaLabel: "Products Section", href: "#products"}
+    {text: "Home", ariaLabel: "Home Section", href: "/"},
+    {text: "News", ariaLabel: "News Section", href: "/article"},
+    {text: "Products", ariaLabel: "Products Section", href: "/products"}
   ]
 });
 

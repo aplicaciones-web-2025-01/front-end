@@ -4,8 +4,7 @@
     <div class="content-wrapper">
       <Sidebar v-if="showSidebar"/>
       <main class="main-content">
-        <ArticleView/>
-        <!--<HomeView /> -->
+        <RouterView />
       </main>
     </div>
     <AppFooter/>
