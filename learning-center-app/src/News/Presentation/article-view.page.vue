@@ -2,13 +2,13 @@
 import ArticleItem from "./article-item.component.vue";
 import {NewsApiService} from "@/News/Application/news-api.service.js"
 import {ArticleAssembler} from "@/News/Application/article.assembler.js";
-import { onBeforeMount ,ref } from "vue";
+import {onBeforeMount, ref} from "vue";
 
 const newsApiService = new NewsApiService();
 
 const articles = ref([])
 
-onBeforeMount (async ()=>{
+onBeforeMount(async () => {
 
   articles.value = ArticleAssembler.toEntitiesFromResponse(await newsApiService.getArticles());
 

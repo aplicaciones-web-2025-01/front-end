@@ -12,6 +12,7 @@ export class ArticleAssembler {
             return this.toEntityFromResource(article);
         });
     }
+
     static toEntityFromResource(resource) {
         let article = new Article(resource);
         return article;

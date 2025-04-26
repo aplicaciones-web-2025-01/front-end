@@ -29,6 +29,5 @@ app.component('pv-card', Card)
 app.use(i18n)
 
 
-
 app.use(router);
 app.mount('#app')
