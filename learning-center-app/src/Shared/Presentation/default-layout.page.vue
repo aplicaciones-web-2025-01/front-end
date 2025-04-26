@@ -5,6 +5,7 @@
       <Sidebar v-if="showSidebar"/>
       <main class="main-content">
         <ArticleView/>
+        <!--<HomeView /> -->
       </main>
     </div>
     <AppFooter/>
@@ -20,6 +21,7 @@ import AppHeader from "@/shared/presentation/the-header.component.vue";
 import AppFooter from "@/shared/presentation/the-footer.component.vue";
 import Sidebar from "@/shared/presentation/the-sidebar.component.vue";
 import ArticleView from "@/News/Presentation/article-view.page.vue";
+import HomeView from "@/Shared/Presentation/home-view.page.vue"
 
 const showSidebar = ref(true);
 

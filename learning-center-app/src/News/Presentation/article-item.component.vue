@@ -5,7 +5,6 @@ const props = defineProps({
   article: {type: Object, required: true}
 });
 
-
 const emits = defineEmits(["show-tooltip"]);
 
 async function shareArticle() {
@@ -35,6 +34,7 @@ async function shareArticle() {
   <pv-card class="m-2">
     <template #title>
       <p>{{ article.title }}</p>
+      <p>{{ article.author }}</p>
     </template>
     <template #content>
       <p class="flex align-content-start flex-wrap mt-4">
