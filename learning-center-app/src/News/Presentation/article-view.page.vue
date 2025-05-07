@@ -9,7 +9,6 @@ const newsApiService = new NewsApiService();
 const articles = ref([])
 
 onBeforeMount(async () => {
-
   articles.value = ArticleAssembler.toEntitiesFromResponse(await newsApiService.getArticles());
 
 });
@@ -17,8 +16,9 @@ onBeforeMount(async () => {
 </script>
 
 <template>
+  <router-link to="/article/create">Create Article</router-link>
   <div class="article-view">
-    <h1>{{ $t("articles.title") }}</h1>
+    <h1 aria-description="This is the title">{{ $t("articles.title") }}</h1>
     <div class="article-list">
       <article-item
           v-for="article in articles"

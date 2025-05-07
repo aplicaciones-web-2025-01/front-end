@@ -8,6 +8,8 @@ import Card from "primevue/card";
 import 'primeflex/primeflex.css'
 import Paginator from 'primevue/paginator';
 import {SelectButton} from "primevue";
+import InputText from 'primevue/inputtext';
+
 import i18n from "@/i18n.js";
 import router from "@/router.js";
 
@@ -26,6 +28,7 @@ app.component('pv-paginator', Paginator)
 app.component('pv-select-button', SelectButton)
 app.component('pv-avatar', Avatar)
 app.component('pv-card', Card)
+app.component("pv-input-text",InputText)
 app.use(i18n)
 
 

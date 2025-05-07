@@ -3,12 +3,13 @@
 export class ArticleAssembler {
 
     static toEntitiesFromResponse(response) {
-        if (response.data.status !== "ok") {
+        console.log(response)
+        if (response.status !== 200) {
             console.error(`${response.status},  ${response.code}, ${response.message}`);
             return [];
         }
         const articlesResponse = response.data;
-        return articlesResponse["articles"].map((article) => {
+        return articlesResponse.map((article) => {
             return this.toEntityFromResource(article);
         });
     }
