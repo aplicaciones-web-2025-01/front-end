@@ -1,9 +1,6 @@
 ﻿export class Article {
-    constructor({title = '', description = '', url = '', urlToImage = '', source = null, publishedAt = ''}) {
+    constructor({title = '', name = ''}) {
         this.title = title;
-        this.description = description;
-        this.url = url;
-        this.urlToImage = urlToImage;
-        this.publishedAt = new Date(publishedAt);
+        this.name = name;
     }
 }
