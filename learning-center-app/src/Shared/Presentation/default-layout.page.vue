@@ -16,9 +16,9 @@
 
 <script setup>
 import {ref} from "vue";
-import AppHeader from "@/shared/Presentation/the-header.component.vue";
-import AppFooter from "@/shared/Presentation/the-footer.component.vue";
-import Sidebar from "@/shared/Presentation/the-sidebar.component.vue";
+import AppHeader from './the-header.component.vue';
+import AppFooter from './the-footer.component.vue';
+import Sidebar from './the-sidebar.component.vue';
 
 const showSidebar = ref(true);
 
