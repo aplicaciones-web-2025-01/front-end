@@ -10,8 +10,18 @@ export class ArticleService {
         return response;
     }
 
+    async getById(id) {
+        var response = await axios.get(`${newApi}/${headLines}/${id}`)
+        return response;
+    }
+
     async createArticle(article) {
         var response = await axios.post(`${newApi}/${headLines}`, article)
+        return response;
+    }
+
+    async updateArticle(id, article) {
+        var response = await axios.put(`${newApi}/${headLines}/${id}`, article)
         return response;
     }
 }

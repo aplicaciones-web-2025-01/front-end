@@ -1,42 +1,51 @@
-﻿<script setup>
-import ArticleItem from "./article-item.component.vue";
-import {NewsApiService} from "@/News/Application/news-api.service.js"
-import {ArticleAssembler} from "@/News/Application/article.assembler.js";
-import {onBeforeMount, ref} from "vue";
-
-const newsApiService = new NewsApiService();
-
-const articles = ref([])
-
-onBeforeMount(async () => {
-  articles.value = ArticleAssembler.toEntitiesFromResponse(await newsApiService.getArticles());
-
-});
-
-</script>
-
-<template>
-  <router-link to="/article/create">Create Article</router-link>
-  <div class="article-view">
-    <h1 aria-description="This is the title">{{ $t("articles.title") }}</h1>
-    <div class="article-list">
-      <article-item
-          v-for="article in articles"
-          :key="article.id"
-          :article="article"
-      />
-    </div>
+﻿<template>
+  <div>
+    <h2>Article Management</h2>
+    <pv-button label="New Article" @click="openNew"></pv-button>
+    <pv-data-table :value="articles" paginator rows="10">
+      <pv-column field="title" header="Title"></pv-column>
+      <pv-column field="Name" header="Name"></pv-column>
+      <pv-column header="Actions">
+        <template #body="slotProps">
+          <pv-button icon="pi pi-pencil" @click="editArticle(slotProps.data)"></pv-button>
+          <pv-button icon="pi pi-trash" severity="danger" @click="deleteArticle(slotProps.data)"></pv-button>
+        </template>
+      </pv-column>
+    </pv-data-table>
   </div>
 </template>
 
-<style scoped>
-.article-view {
-  padding: 1rem;
-}
+<script setup>
+import {onBeforeMount, reactive, ref} from 'vue';
+import {ArticleAssembler} from "@/News/Application/article.assembler.js";
+import {ArticleService} from "@/News/Application/article-api.service.js";
+import router from "@/router.js";
 
-.article-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+const articles = ref([]);
+const article = reactive({});
+const articleService = new ArticleService();
+
+onBeforeMount(async () => {
+  articles.value = ArticleAssembler.toEntitiesFromResponse(await articleService.getAll());
+
+});
+const openNew = () => {
+  router.push("/article/create")
+};
+
+const editArticle = (selected) => {
+  console.log(selected);
+  router.push({name: "updateArticle", params: {id: selected.id}});
+};
+
+
+const deleteArticle = (selected) => {
+};
+</script>
+
+
+<style scoped>
+h2 {
+  margin-bottom: 20px;
 }
 </style>

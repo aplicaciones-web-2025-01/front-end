@@ -8,6 +8,7 @@ const routes = [
     {path: '/', component: HomeView},
     {path: '/article', component: ArticleView ,exact: true},
     {path: '/article/create', component: ArticleItemCreateEdit ,exact: true},
+    {path: '/article/update/:id', component: ArticleItemCreateEdit, name: "updateArticle"},
     {path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound},
 ]
 
