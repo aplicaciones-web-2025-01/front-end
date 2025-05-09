@@ -26,9 +26,12 @@ const article = reactive({});
 const articleService = new ArticleService();
 
 onBeforeMount(async () => {
-  articles.value = ArticleAssembler.toEntitiesFromResponse(await articleService.getAll());
-
+  await getData();
 });
+
+const getData = async () =>{
+  articles.value = ArticleAssembler.toEntitiesFromResponse(await articleService.getAll());
+}
 const openNew = () => {
   router.push("/article/create")
 };
@@ -39,7 +42,17 @@ const editArticle = (selected) => {
 };
 
 
-const deleteArticle = (selected) => {
+const deleteArticle = async(selected) => {
+  const { status } = await articleService.deleteArticle(selected.id);
+  if( status === 200 ) {
+    alert("Article deleted successfully.");
+  }
+  else{
+    alert("Error deleting article")
+  }
+
+  await getData();
+
 };
 </script>
 

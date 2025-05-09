@@ -24,5 +24,10 @@ export class ArticleService {
         var response = await axios.put(`${newApi}/${headLines}/${id}`, article)
         return response;
     }
+
+    async deleteArticle(id) {
+        var response = await axios.delete(`${newApi}/${headLines}/${id}`)
+        return response;
+    }
 }
 
