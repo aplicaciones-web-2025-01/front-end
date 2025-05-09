@@ -37,7 +37,6 @@ const openNew = () => {
 };
 
 const editArticle = (selected) => {
-  console.log(selected);
   router.push({name: "updateArticle", params: {id: selected.id}});
 };
 
