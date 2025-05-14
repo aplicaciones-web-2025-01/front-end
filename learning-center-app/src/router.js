@@ -2,10 +2,11 @@
 import ArticleView from "@/News/Presentation/article-view.page.vue";
 import NotFound from "@/Shared/Presentation/not-found.component.vue";
 import ArticleItemCreateEdit from "@/News/Presentation/article-item-create-edit.component.vue";
+import theLogin from "@/Security/Presentation/the-login.component.vue"
 import {createRouter, createWebHistory} from "vue-router";
 
 const routes = [
-    {path: '/', component: HomeView},
+    {path: '/', component:theLogin },
     {path: '/article', component: ArticleView ,exact: true},
     {path: '/article/create', component: ArticleItemCreateEdit ,exact: true},
     {path: '/article/update/:id', component: ArticleItemCreateEdit, name: "updateArticle"},
